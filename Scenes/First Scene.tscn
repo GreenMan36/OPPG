@@ -1,3 +1,8 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="BaseNode" type="Node"]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+
+[node name="World_Base_Node" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 448, 240 )
