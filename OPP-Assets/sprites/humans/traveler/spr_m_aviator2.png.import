@@ -2,11 +2,16 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/spr_m_aviator2.png-ef32202246e13446e1a4b4795fc0865e.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://OPP-Assets/sprites/humans/traveler/spr_m_aviator2.png"
+dest_files=[ "res://.import/spr_m_aviator2.png-ef32202246e13446e1a4b4795fc0865e.stex" ]
+
 [params]
 
 compress/mode=0
