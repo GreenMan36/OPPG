@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/walk_anim003.png-4156bd790859db75f6808cdcd9c226ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://OPP-Assets/sprites/humans/traveler/spr_m_traveler/walk_anim/walk_anim003.png"
+dest_files=[ "res://.import/walk_anim003.png-4156bd790859db75f6808cdcd9c226ea.stex" ]
 
 [params]
 

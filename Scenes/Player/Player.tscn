@@ -1,0 +1,38 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scenes/Player/KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://OPP-Assets/sprites/humans/traveler/spr_m_traveler/walk_anim/walk_anim006.png" type="Texture" id=2]
+[ext_resource path="res://OPP-Assets/sprites/humans/traveler/spr_m_traveler/walk_anim/walk_anim003.png" type="Texture" id=3]
+[ext_resource path="res://OPP-Assets/sprites/humans/traveler/spr_m_traveler/walk_anim/walk_anim008.png" type="Texture" id=4]
+[ext_resource path="res://OPP-Assets/sprites/humans/traveler/spr_m_traveler/walk_anim/walk_anim001.png" type="Texture" id=5]
+[ext_resource path="res://OPP-Assets/sprites/humans/traveler/spr_m_traveler/walk_anim/walk_anim004.png" type="Texture" id=6]
+[ext_resource path="res://OPP-Assets/sprites/humans/traveler/spr_m_traveler/walk_anim/walk_anim005.png" type="Texture" id=7]
+[ext_resource path="res://OPP-Assets/sprites/humans/traveler/spr_m_traveler/walk_anim/walk_anim007.png" type="Texture" id=8]
+[ext_resource path="res://OPP-Assets/sprites/humans/traveler/spr_m_traveler/walk_anim/walk_anim002.png" type="Texture" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 16.0
+height = 32.0
+
+[node name="Player" type="Node2D"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+frames = SubResource( 1 )
+animation = "Walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+shape = SubResource( 2 )
